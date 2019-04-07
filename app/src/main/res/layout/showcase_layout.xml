@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_tool_trip"
+            android:text="Play tooltips now"
+            android:textColor="#FF4D55FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+
+
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_tool_trip"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="3dp"
+                android:text="Learn how to search for players"
+                android:textColor="#FF999999"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/play_bg"
+                android:text="Play"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"                />
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

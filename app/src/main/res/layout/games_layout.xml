@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/leftRel"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/vs_tv"
+                android:layout_marginEnd="15dp"
+                >
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/lal"
+                    android:id="@+id/lal_iv"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/lal_iv"
+                    android:layout_marginStart="6dp"
+                    android:text="LAL"
+                    android:textStyle="bold"
+                    android:textColor="#FF666666"
+                    android:textSize="16sp"
+                    android:id="@+id/left_team_short_tv"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Los Angeles Lakers"
+                    android:textColor="#FF999999"
+                    android:textSize="10sp"
+                    android:layout_below="@+id/lal_iv"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/left_team_big_tv"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/vs_tv"
+                android:text="VS"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/vs_tv"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+
+
+                >
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/gsw"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/gsw_iv"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/gsw_iv"
+                    android:layout_marginEnd="6dp"
+                    android:text="LAL"
+                    android:textStyle="bold"
+                    android:textColor="#FF666666"
+                    android:textSize="16sp"
+                    android:id="@+id/right_team_short_tv"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Los Angeles Lakers"
+                    android:textColor="#FF999999"
+                    android:textSize="10sp"
+                    android:layout_below="@+id/gsw_iv"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/right_team_big_tv"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

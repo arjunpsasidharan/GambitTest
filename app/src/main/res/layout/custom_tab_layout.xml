@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Players"
+        android:textColor="@color/tab_title"
+        android:textSize="18sp"
+        android:id="@+id/title_tv"
+        />
+    
+    <RelativeLayout
+        android:layout_width="20dp"
+        android:layout_height="12dp"
+        android:background="@drawable/circle_number"
+        android:layout_toEndOf="@+id/title_tv"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="6dp"
+        android:id="@+id/counter_rel"
+        android:visibility="gone"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="#FFFFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:id="@+id/counter_tv"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

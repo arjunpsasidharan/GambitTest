@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_rel"
+    tools:context=".activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:fitsSystemWindows="true"
+        android:id="@+id/appbar_layout"
+        android:background="@drawable/bg4"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collaps_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:layout_collapseMode="parallax"
+                android:id="@+id/rel"
+                app:layout_collapseParallaxMultiplier="0.5">
+                <ImageView
+                    android:id="@+id/expandedImage"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/profile"
+                  />
+            </RelativeLayout>
+
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:textColor="#ffff"
+            app:layout_collapseMode="pin"
+            android:text="The NBA Scout"
+            android:textSize="14sp"
+            android:layout_gravity="bottom|center"
+            app:layout_anchor="@id/rel"
+            android:layout_marginTop="13dp"
+            app:layout_anchorGravity="bottom"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/white"
+
+            app:tabIndicatorColor="@color/colorPrimary"
+
+            />
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

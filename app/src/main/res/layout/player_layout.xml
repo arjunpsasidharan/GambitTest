@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="12dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/top_rel"
+                android:layout_alignParentStart="true"
+                >
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="27dp"
+                android:src="@drawable/profile"
+                android:id="@+id/prof_iv"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Lebron"
+                android:layout_toEndOf="@+id/prof_iv"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/first_name_tv"
+                android:textColor="#FFB3B3B3"
+                android:textSize="12sp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="James"
+                    android:layout_toEndOf="@+id/prof_iv"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/last_name_tv"
+                    android:layout_below="@+id/first_name_tv"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Lakers"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/team_name_tv"
+                    android:textColor="#FFB3B3B3"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/team_id_tv"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/team_name_tv"
+                    android:layout_marginEnd="15dp"
+                    />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_rel"
+            android:background="#FFF5F6FF"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Position - "
+            android:textColor="#FF999999"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:ellipsize="end"
+            android:id="@+id/position_tv"
+            android:layout_marginStart="16dp"
+            />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:background="@drawable/round_grey"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/position_tv"
+                android:layout_marginStart="6dp"
+                android:id="@+id/view_1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                tools:text="GoldenStatewarriorsdjfnjffjdfjd"
+                android:textColor="#FF999999"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:maxWidth="119dp"
+                android:layout_toEndOf="@+id/view_1"
+                android:ellipsize="end"
+                android:id="@+id/team_full_name_tv"
+                android:layout_marginStart="6dp"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:background="@drawable/round_grey"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/team_full_name_tv"
+                android:layout_marginStart="10dp"
+                android:id="@+id/view_2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                tools:text="dfdfdfdf"
+                android:textColor="#FF999999"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:maxWidth="119dp"
+                android:layout_toEndOf="@+id/view_2"
+                android:ellipsize="end"
+                android:id="@+id/team_city_name_tv"
+                android:layout_marginStart="6dp"
+                />
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
